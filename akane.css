@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#akane {
+    background-color: #F5F0FF; /* Delete after merge */
+}
+
+#akane .bigger-font {
+    font-family: "Lora", serif;
+    font-size: 4rem;
+}
+
+#akane h4 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#routine-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.33% 11.5%;
+    gap: 4.5%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    aspect-ratio: 15 / 7;
+    width: 100vw;
+}
+
+#routine-messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+#routine-button {
+    border-radius: 1rem;
+    white-space: nowrap;
+    border-radius: 4rem;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    padding: 1rem 1.75rem;
+    width: fit-content;
+}
+
+#routine-button h4 {
+    margin: 0.25rem 0;
+}
+
+#routine-images {
+    position: relative;
+    flex: 1.25;
+    aspect-ratio: 1 / 1;
+}
+
+#routine-image-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 86%;
+}
+
+#routine-image-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 86%;
+}
+
+#video-button,
+#trainer-button {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    border-radius: 1rem;
+    white-space: nowrap;
+    padding: 0 0.88rem;
+    background-color: white;
+}
+
+#video-button {
+    top: 17%;
+    right: 7%;
+    z-index: 3;
+}
+
+#trainer-button {
+    top: 83%;
+    left: 7%;
+    z-index: 3;
+}
+
+#video-button i,
+#trainer-button i {
+    font-size: 1.67rem;
+    margin: 0.75rem 0;
+}
+
+#video-button .gradient-text,
+#trainer-button .gradient-text {
+    background: linear-gradient(to right, #FF52AF, #9F53FF); /* グラデーションの色 */
+    -webkit-background-clip: text;  /* 背景をテキストに切り抜く（Webkit系ブラウザ） */
+    -webkit-text-fill-color: transparent; /* テキスト自体は透明にする */
+}
