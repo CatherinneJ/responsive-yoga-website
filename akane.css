@@ -30,7 +30,6 @@
     justify-content: space-around;
     align-items: center;
     aspect-ratio: 15 / 7;
-    width: 100vw;
 }
 
 #routine-messages {
@@ -40,18 +39,13 @@
     row-gap: 2.5rem;
 }
 
-#routine-button {
-    border-radius: 1rem;
+.gradient-button-1 {
     white-space: nowrap;
     border-radius: 4rem;
     background: linear-gradient(to right, #FF52AF, #9F53FF);
     color: white;
-    padding: 1rem 1.75rem;
+    padding: 1.25rem 1.75rem;
     width: fit-content;
-}
-
-#routine-button h4 {
-    margin: 0.25rem 0;
 }
 
 #routine-images {
@@ -108,8 +102,69 @@
 }
 
 #video-button .gradient-text,
-#trainer-button .gradient-text {
+#trainer-button .gradient-text,
+#follow-message .gradient-text {
     background: linear-gradient(to right, #FF52AF, #9F53FF); /* グラデーションの色 */
     -webkit-background-clip: text;  /* 背景をテキストに切り抜く（Webkit系ブラウザ） */
     -webkit-text-fill-color: transparent; /* テキスト自体は透明にする */
+}
+
+#follow-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3.33% 14%;
+}
+
+#follow-area-1,
+#follow-area-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 3%;
+    width: 100%
+}
+
+#follow-area-1 {
+    aspect-ratio: 2.4 / 1;
+}
+
+#follow-message {
+    flex: 1.4;
+    text-align: center;
+    justify-items: center;
+    align-content: end;
+    order: 2;
+    height: 100%;
+}
+
+#follow-button {
+    aspect-ratio: 1/1;
+    align-content: center;
+    padding: 1rem;
+}
+
+#follow-image-1 {
+    flex: 1;
+    order: 1;
+}
+
+#follow-image-2 {
+    flex: 1;
+    order: 3;
+}
+
+#follow-area-1 img {
+    aspect-ratio: 2 / 3;
+    width: 100%;
+}
+
+#follow-image-3,
+#follow-image-4  {
+    flex: 1;
+    aspect-ratio: 49 / 25;
+}
+
+
+#follow-area-2 img {
+    width: 100%;
 }
