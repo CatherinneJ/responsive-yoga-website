@@ -101,9 +101,7 @@
     margin: 0.75rem 0;
 }
 
-#video-button .gradient-text,
-#trainer-button .gradient-text,
-#follow-message .gradient-text {
+.gradient-text {
     background: linear-gradient(to right, #FF52AF, #9F53FF); /* グラデーションの色 */
     -webkit-background-clip: text;  /* 背景をテキストに切り抜く（Webkit系ブラウザ） */
     -webkit-text-fill-color: transparent; /* テキスト自体は透明にする */
@@ -120,7 +118,7 @@
 #follow-area-2 {
     display: flex;
     justify-content: space-between;
-    gap: 3%;
+    gap: 4%;
     width: 100%
 }
 
@@ -129,7 +127,7 @@
 }
 
 #follow-message {
-    flex: 1.4;
+    flex: 1.6;
     text-align: center;
     justify-items: center;
     align-content: end;
