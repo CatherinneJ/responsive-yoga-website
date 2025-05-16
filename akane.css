@@ -15,10 +15,23 @@
     font-size: 4rem;
 }
 
-#akane h4 {
+#akane .big-font {
+    font-family: "Lora", serif;
+    font-size: 3.5rem;
+}
+
+#akane h4,
+#akane button {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1rem;
+}
+
+#akane .small-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+
 }
 
 #routine-container {
@@ -44,7 +57,7 @@
     border-radius: 4rem;
     background: linear-gradient(to right, #FF52AF, #9F53FF);
     color: white;
-    padding: 1.25rem 1.75rem;
+    padding: 1.25em 1.75em;
     width: fit-content;
 }
 
@@ -162,7 +175,49 @@
     aspect-ratio: 49 / 25;
 }
 
-
 #follow-area-2 img {
     width: 100%;
+}
+
+#newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin: 3rem;
+    border-radius: 2rem;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    width: 70%;
+    aspect-ratio: 2.65 / 1;
+    gap: 10%;
+    color: white;
+    text-align: center;
+}
+
+#newsletter-container h4 {
+    width: 61%;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 3rem;
+    width: 57%;
+    aspect-ratio: 7.3 / 1;
+    padding: 0 1.5% 0 4.5%;
+}
+
+#newsletter-form input {
+    border: none;
+    color: #A197B4;
+    width: 80%;
+}
+
+#newsletter-form button {
+    align-items: center;
+    border: none;
+    height: 77%;
 }
