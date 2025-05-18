@@ -62,6 +62,7 @@ footer h4,
 
 .gradient-button-1 {
     white-space: nowrap;
+    border: none;
     border-radius: 4rem;
     background: linear-gradient(to right, #FF52AF, #9F53FF);
     color: white;
@@ -75,7 +76,7 @@ footer h4,
     aspect-ratio: 1 / 1;
 }
 
-#routine-image-1 {
+.routine-image-1 {
     position: absolute;
     top: 0;
     left: 0;
@@ -286,6 +287,48 @@ footer {
     font-size: 1.5rem;
 }
 
+#toggle + label .dark-mode {
+    display: none;
+}
+
+#toggle:checked + label .light-mode {
+    display: none;
+}
+
+#toggle:checked + label .dark-mode {
+    display: block;
+}
+
+#toggle:checked ~ #akane {
+    background-color: #14092A;
+    color: #D1C0F1;
+}
+
+#toggle:checked ~ #akane h4 {
+    color: #A094B8;
+}
+
+#toggle:checked ~ #akane #video-button,
+#toggle:checked ~ #akane #trainer-button {
+    background-color: #372A51;
+}
+
+#toggle:checked ~ #akane #newsletter-container h4 {
+    color: white;
+}
+
+.dark-img {
+    display: none;
+}
+
+#toggle:checked ~ #akane .light-img {
+    display: none;
+}
+
+#toggle:checked ~ #akane .dark-img {
+    display: block;
+}
+
 @media (max-width: 1024px) {
 
     #akane {
@@ -342,7 +385,7 @@ footer {
         aspect-ratio: 1 / 1;
     }
     
-    #routine-image-1 {
+    .routine-image-1 {
         position: relative;
         top: 0;
         left: 0;
@@ -402,26 +445,22 @@ footer {
         padding: 2rem 2.5rem;
     }
     
-    #follow-area-1,
-    #follow-area-2 {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        gap: 2rem;
+    #follow-area-1 {
+        display: grid;
+        grid-template-areas:
+            "message message"
+            "image-left image-right";
+        aspect-ratio: auto;
+        justify-content: space-evenly;
+        gap: 1rem;      
         width: 100%
     }
-    
-    #follow-area-1 {
-        aspect-ratio: auto;
-        flex-wrap: wrap;
-    }
-    
+  
     #follow-message {
-        flex: 1;
+        grid-area: message;
         text-align: center;
         justify-items: center;
         align-content: center;
-        order: 1;
         height: 100%;
     }
     
@@ -430,15 +469,20 @@ footer {
     }
 
     #follow-image-1 {
-        flex: 1;
-        order: 2;
-        width: 37%;
+        grid-area: image-left;
     }
     
     #follow-image-2 {
-        flex: 1;
-        order: 3;
-        width: 37%;
+        grid-area: image-right;
+        padding-top: 2.5rem;
+    }
+
+    #follow-area-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%
     }
     
     #follow-area-2 img {
