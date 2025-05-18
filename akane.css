@@ -285,3 +285,257 @@ footer {
 #sns i {
     font-size: 1.5rem;
 }
+
+@media (max-width: 1024px) {
+
+    #akane {
+        padding: 2rem 0;
+    }
+    
+    #akane .bigger-font {
+        font-size: 2rem;
+    }
+    
+    #akane .big-font {
+        font-size: 1.75rem;
+    }
+    
+    footer h2 {
+        font-size: 1.25rem;
+    }
+    
+    #akane h4,
+    footer h4,
+    #akane button,
+    #footer-top-info p {
+        font-size: 0.938rem;
+    }
+    
+    #akane .small-font {
+        font-size: 0.813rem;
+    
+    }
+    
+    #routine-container {
+        display: flex;
+        flex-direction: column;
+        padding: 3.33% 11.5%;
+        gap: 2rem;
+        height: auto;
+        justify-content: space-around;
+        align-items: center;
+        aspect-ratio: auto;
+    }
+    
+    #routine-messages {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #routine-images {
+        position: relative;
+        flex: auto;
+        aspect-ratio: 1 / 1;
+    }
+    
+    #routine-image-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 86%;
+    }
+    
+    #routine-image-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 86%;
+    }
+
+    #video-button,
+    #trainer-button {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+        border-radius: 1rem;
+        white-space: nowrap;
+        padding: 0 0.88rem;
+        background-color: white;
+    }
+    
+    #video-button {
+        top: 17%;
+        right: 7%;
+        z-index: 3;
+    }
+    
+    #trainer-button {
+        top: 83%;
+        left: 7%;
+        z-index: 3;
+    }
+    
+    #video-button i,
+    #trainer-button i {
+        font-size: 1.67rem;
+        margin: 0.75rem 0;
+    }
+    
+    .gradient-text {
+        background: linear-gradient(to right, #FF52AF, #9F53FF); /* グラデーションの色 */
+        -webkit-background-clip: text;  /* 背景をテキストに切り抜く（Webkit系ブラウザ） */
+        -webkit-text-fill-color: transparent; /* テキスト自体は透明にする */
+    }
+    
+    #follow-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2rem 2.5rem;
+    }
+    
+    #follow-area-1,
+    #follow-area-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%
+    }
+    
+    #follow-area-1 {
+        aspect-ratio: auto;
+        flex-wrap: wrap;
+    }
+    
+    #follow-message {
+        flex: 1;
+        text-align: center;
+        justify-items: center;
+        align-content: center;
+        order: 1;
+        height: 100%;
+    }
+    
+    #follow-message h4 {
+        margin-top: 1.5rem;
+    }
+
+    #follow-image-1 {
+        flex: 1;
+        order: 2;
+        width: 37%;
+    }
+    
+    #follow-image-2 {
+        flex: 1;
+        order: 3;
+        width: 37%;
+    }
+    
+    #follow-area-2 img {
+        width: 80%;
+    }
+
+    #follow-image-4 {
+        display: flex;
+        justify-content: end;
+    }
+    
+    #newsletter-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        margin: 1.5rem;
+        width: auto;
+        aspect-ratio: auto;
+        padding: 3rem 1rem;
+        gap: 1rem;
+    }
+    
+    #newsletter-container h4 {
+        width: 90%;
+    }
+    
+    #newsletter-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        border-radius: 3rem;
+        width: 100%;
+        aspect-ratio: auto;
+        padding: auto;
+    }
+    
+    #newsletter-form input {
+        border: none;
+        background-color: white;
+        padding-left: 1.5rem;
+        border-radius: 3rem;
+        height: 4rem;
+        width: 100%;
+    }
+    
+    #newsletter-form button {
+        align-items: center;
+        border: none;
+        height: 4rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+    }
+    
+    #footer-top,
+    #footer-bottom {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #footer-top-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: auto;
+    }
+        
+    #footer-top-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    #footer-top-info div {
+        flex: 1;
+        aspect-ratio: auto;
+        width: auto;
+    }
+    
+    #footer-top-info h2 {
+        margin-bottom: 1.25rem;
+    }
+    
+    #footer-bottom {
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+        align-items: center;
+    }    
+}
