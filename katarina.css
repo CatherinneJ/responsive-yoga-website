@@ -44,7 +44,7 @@ body {
     color: var(--text-color);
     font-family: sans-serif;
     transition: all 0.3s ease;
-    padding: 2rem;
+    /* padding: 2rem; */
 }
 
 p.teacher {
@@ -291,7 +291,7 @@ main {
     }
 
 header {
-    height: 65px;
+    /* height: 65px; */
     padding: 0 25px;
     position: relative;
     display: flex;
@@ -310,10 +310,19 @@ header {
     padding:1rem;
     width: 100%;
 }
+<<<<<<< HEAD
 .nav-control{
     display: flex;
     flex-direction: column;
 }
+=======
+
+.nav-menu {
+    display: flex;
+    gap:1.5rem;
+}
+
+>>>>>>> 5be321e8ef34c861920865ac99a52e9a9a40a4d3
 .nav-menu ul{
     display: flex;
     gap:1.5rem;
@@ -325,7 +334,7 @@ header {
     color: var(--text-color);
     text-decoration: none;
     display: block;
-    padding:40px 25px;
+    /* padding:40px 25px; */
     transition: 0.3s;
 }
 .hamburger{
