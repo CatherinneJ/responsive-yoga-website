@@ -1,21 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>responsive-yoga-website</title>
+    <title>Resonsive-yoga-website</title>
     <link rel="stylesheet" href="akane.css">
     <link rel="stylesheet" href="katarina.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
 </head>
-<body>
+
+<input type="checkbox" id="theme-toggle" hidden/> 
+<body >
+    <input type="checkbox" id="menut-toggle" hidden/>
     <header>
+        <div class="header-menu">
+            <div class="logo">
+                <img src="images/Yoga-logo.png" alt="logo">
+                </div>
+                <label for="menu-toggle" class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
+            <nav id="menu" class="nav-menu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Service 1</a></li>
+                    <li><a href="#">Service 2</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="nav-control">
+                    <label for="theme-toggle" class="theme-switch">
+                        <span>
+                            <i class="fa-regular fa-moon moon-icon" ></i>
+                        </span>
+                         <span>
+                             <i class="fa-solid fa-sun sun-icon"></i>
+                         </span>   
+                    </label>
+                </div>
+            </nav>
+        </div>
     </header>
     <main>
         <input type="checkbox" id="toggle" hidden/>
         <label for="toggle"><i class="fa-regular fa-moon light-mode"></i><i class="fa-solid fa-sun dark-mode"></i></label>
         <section id="katarina">
+            <div class="first-part">
+                <div class="left-one">
+                    <p class="teacher">Choose Your Best <span class="highlight">Yoga</span>Teacher</p>
+                    <img class="yoga-star" src="images/home-star.png" alt="yoga-star">
+                    <img class="home-circle" src="images/home-circle.png" alt="home-cicrle">
+                    <h1 class="description"> Calm your mind and body with the best yoga teachers available, relax your
+                        day and stay positive.</h1>
+                    <button class="free-start">Get Started Free →</button>
+                    <div class="stat-both">
+                        <div class="stat">300+<span>Yoga Class</span></div>
+                        <div class="stat">40+<span>Participants</span></div>
+                    </div>
+                </div>
+                <div class="image-yoga">
+                    <img class="yoga-home" src="images/home-yoga.png" alt="yoga-home">
+                </div>
+            </div>
+            <div class="part-two">
+                <div class="left-two">
+                    <div class="number-yoga">#01</div>  
+                    <div>
+                        <img class="yoga-list" src="images/List-box.png" alt="yoga-list">
+                    </div>
+                </div>
+                <div class="middle-two">
+                    <img class="start-two" src="images/liststar-2-img.png" alt="start-two">
+                    <h4 class="two-message">Get a list of specific influencers in your niche at your fingertips so you
+                        can focus on managing your status.</h4>
+                </div>
+                <div class="right-two">
+                    <img src="images/Button link list.png" alt="list-next">
+                </div>
+            </div>
+            <div class="part-three">
+                <div class="left-three">
+                    <img class="man" src="images/man.png" alt="man">
+                </div>
+                <div class="right-three">
+                    <div class="font-three" id="message-start">
+                        <p>Bring Happines To Good Health</p>
+                    </div>
+                    <h4 class="three-message">If you take care of your good health, take care of your mentality and lead
+                        a healthy life with positive thoughts every day.</h4>
+                    <button class="button-start">Let´s Start →</button>
+                </div>
+            </div>
         </section>
         <section id="akane">
             <div id="routine-container">

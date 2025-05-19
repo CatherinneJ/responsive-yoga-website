@@ -1,0 +1,653 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body:has(#theme-toggle:checked) {
+    --bg-color: #14092A;
+    --text-color: #D1C0F1;
+    --sun-display: none;
+    --moon-display: inline;
+    --stat-both-color: #D1C0F1;
+    --description-color: #D1C0F1;
+    --two-message-color: #D1C0F1;
+    --thre-message-color: #D1C0F1;
+    --teacher-color: #D1C0F1;
+    --number-yoga-color: #D1C0F1;
+    ---yoga-list-color: #D1C0F1;
+
+}
+
+:root {
+    --bg-color: #F5F0FF;
+    --text-color: #220953;
+    --sun-display: none;
+    --moon-display: inline;
+    --teacher-color: #220953;
+    --stat-both-color: #220953;
+    --description-color: #4B3E65;
+    --two-message-color: #4B3E65;
+    --three-message-color: #4B3E65;
+    --number-yoga-color: var(--bg-color);
+    --yoga-list-color: #F5F0FF;
+}
+
+img.yoga-list {
+    color: var(--yoga-list-color);
+}
+
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+    padding: 2rem;
+}
+
+p.teacher {
+    color: var(--teacher-color);
+}
+
+h1.description {
+    color: var(--description-color);
+}
+
+h4.two-message {
+    color: var(--two-message-color);
+}
+
+p {
+    color: var(--text-color);
+}
+
+h4 {
+    color: var(--text-color);
+}
+
+h4.three-message {
+    color: var(--three-message);
+}
+
+.left-two.number-yoga {
+    color: var(--number-yoga-color);
+}
+
+.stat-both {
+    color: var(--stat-both-color);
+}
+
+body.theme {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    transition: all 0.3s ease-in-out;
+}
+
+header,
+main {
+    background-attachment: var(--bg-color);
+}
+
+.moon-icon {
+    display: var(--moon-display);
+}
+
+.sun-icon {
+    display: var(--sun-display);
+}
+
+/*for mobile*/
+@media (max-width:768px) {
+    .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 65px;
+        right: 1rem;
+        background-color:var(--bg-color);
+        padding: 1rem;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        opacity: 0;
+        transform:scaleY(0);
+        transform-origin: top;
+        transition:all 0.3s ease-in-out;
+    }
+
+  
+    #enu-toggle:checked + .header nav ul {
+        display: flex;
+        opacity:1;
+        transform:scaleY(1);
+        /* flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 70px;
+        right: 20px;
+        background: var(--bg-color);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        z-index: 10;*/
+    }
+
+    /* .nav-menu ul {
+        display: none;
+        flex-direction: column;
+        background-color: var(--bg-color);
+        position: absolute;
+        top: 65px;
+        right: 0px;
+        padding: 1rem;
+        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+        width: 200px;
+    }*/
+    
+    .first-part {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 20px;
+        gap: 20px;
+      }
+    
+      .left-one {
+        max-width: 90%;
+        position: relative;
+      }
+    
+      .teacher {
+        font-size: 2rem;
+        width: 100%;
+      }
+    
+      .description {
+        font-size: 1rem;
+        width: 100%;
+        color: #4B3E65;
+      }
+    
+      .yoga-star,
+      .home-circle {
+        display: none; /* Skryjeme dekorácie pre mobil */
+      }
+    
+      .free-start {
+        font-size: 1rem;
+        padding: 10px 20px;
+      }
+    
+      .stat-both {
+        flex-direction: column;
+        gap: 10px;
+      }
+    
+      .yoga-home {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        display: block;
+      }
+    
+      .image-yoga {
+        text-align: center;
+        width: 100%;
+      }
+      .part-two
+       {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+      }
+      .left-two {
+          display: flex;
+          flex-direction: row; /* vedľa seba */
+          align-items: center;
+          justify-content: center;
+          gap: 10px;
+          width: 100%;
+          margin-bottom: 1rem;
+        }
+        .number-yoga {
+          font-size: 1.5rem;
+        }
+        
+        .yoga-list {
+          width: 40%;
+          height: auto;
+          display: block;
+        }
+      
+        .middle-two {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 100%;
+          margin-top: 1rem;
+        }
+        
+          .two-message {
+            width: 90%;
+            max-width: 500px;
+            margin-top: 1rem;
+            font-size: 1rem;
+            color: #4B3E65;
+            text-align: center;
+          }
+          
+          .right-two img {
+            width: 50%;
+            height: auto;
+            margin: 1rem auto;
+            display: block;
+          }
+          .man,
+          .yoga-home {
+            width: 80%;
+            height: auto;
+            margin: 1rem auto;
+          }
+          
+          .stat-both {
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+          }
+          .left-one,
+          .right-three {
+            width: 90%;
+            max-width: 500px;
+            margin: 0 auto;
+          }
+          .part-three {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 2rem 1rem;
+          }
+          .font-three {
+            font-size: 2rem;
+            color: #220953;
+            margin-bottom: 1rem;
+          }
+          
+            .three-message {
+              font-size: 1rem;
+              color: #4B3E65;
+              margin-bottom: 1.5rem;
+              padding: 0 1rem;
+            }
+          
+            .man {
+              width: 70%;
+              height: auto;
+              margin: 0 auto;
+            }
+          
+            .button-start {
+              margin-top: 1rem;
+            }
+            .teacher,
+            .description
+             {
+              text-align: center;
+              padding: 0 1rem;
+            }
+           
+              body:has(#menu-toggle:checked) .nav-menu ul {
+                  display: flex;
+              }
+          
+              .menu-icon {
+                  display: inline;
+              }
+          
+              .nav-container {
+                  position: relative;
+              }
+              
+                  .nav-container ul li {
+                      padding: 10px 0;
+                  }
+    }
+
+
+}
+
+header {
+    height: 65px;
+    padding: 0 25px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--bg-color);
+    width:100%;
+    transition: 0.3s;
+}
+
+.header-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: relative;
+    padding:1rem;
+    width: 100%;
+}
+
+.nav-menu ul{
+    display: flex;
+    gap:1.5rem;
+}
+.nav-menu li{
+    list-style: none;
+}
+.nav-menu li a{
+    color: var(--text-color);
+    text-decoration: none;
+    display: block;
+    padding:40px 25px;
+    transition: 0.3s;
+}
+.hamburger{
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+   gap:5px;
+   
+   }
+   .hamburger span{
+    width: 20px;
+  height: 3px;
+  background: var(--text-color);
+  border-radius: 2px;
+   }
+/*.hamburger:before;
+.hamburger:after{
+    content:"";
+    position: absolute;
+    height:4px;
+    right:0;
+    background-color: var(--bg-color);
+    border-radius: 10px;
+    transition:0.3s;
+}
+.hamburger:before{
+    top:-10px;
+    width:20px;
+}
+.hamburger:after{
+    top:10px;
+    width:25px;
+}
+.toggle-menu{
+    position: absolute;
+    width:30px;
+    height: 100%;
+    z-index:3;
+    cursor: pointer;
+    opacity:0;  
+}
+.hamburger,
+.toggle-menu{
+    display: none;   
+}
+.nav-container input:checked ~ .hamburger{
+    background:transparent;
+}
+.nav-container input:checked ~ .hamburger:before{
+    top:0;
+    transform:rotate(-45deg);
+    width: 30px;
+}
+.nav-container input:checked ~ .hamburger:after{
+    top:0;
+    transform:rotate(45deg);
+    width: 30px;
+}
+/*
+.nav-menu ul {
+    display: flex;
+    gap: 1.5rem;
+    /*flex-direction: row;
+    align-items: center;*/
+
+}
+
+.moon-icon {
+    display: inline;
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3 ease;
+
+}
+
+.sun-icon {
+    display: none;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3 ease;
+
+}
+
+#theme-toggle:checked~.wrapper header .moon-icon {
+    display: none;
+}
+
+#theme-toggle:checked~.wrapper header .sun-icon {
+    display: inline;
+}
+
+#theme-toggle:checked~header .moon-icon {
+    background-color: #14092A;
+    color: #D1C0F1;
+}
+
+#theme-toggle:checked~#katarina h4 .moon-icon {
+    color: #A094B8;
+}
+.menu-icon {
+    display: none;
+    cursor: pointer;
+}
+.first-part {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    justify-content: space-around;
+    font-family: "Lora" serif;
+    color: #220953;
+    padding: 1.00% 11.6%;
+}
+
+.left-one {
+    max-width: 500px;
+    position: relative;
+}
+
+.lef-one h1 {
+    font-family: "Poppins" sans-serif;
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+.yoga-star {
+    position: absolute;
+    top: 90px;
+    right: 25px;
+    height: 70px;
+}
+
+.home-circle {
+    position: absolute;
+    /*flex-wrap: wrap;*/
+    bottom: 185px;
+    left: -20px;
+    height: 20px;
+}
+
+.highlight {
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    padding: 3px 10px;
+    border-radius: 5px;
+    transform: rotate(10deg);
+    display: inline-block;
+    margin: 8px 0;
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4B3E65;
+    font-family: "Poppins", sans-serif;
+    width: 380px;
+}
+
+.teacher {
+    font-size: 3.8rem;
+    font-family: "Lora", serif;
+    color: #220953;
+    width: 350px;
+}
+
+.yoga-home {
+    height: 450px;
+    margin-right: 100px;
+}
+
+.yoga-participants {
+    display: flex;
+    margin-top: 30px;
+    gap: 40px;
+}
+
+.free-start {
+    padding: 14px 28px;
+    border: none;
+    border-radius: 25px;
+    border-color: rgb(206, 59, 169);
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.stat-both {
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.stat {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.stat span {
+    display: block;
+    font-size: 14px;
+    font-weight: normal;
+}
+
+.part-two {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    align-items: center;
+    gap: 4, 0%;
+    height: auto;
+    aspect-ratio: 15/7;
+    width: 105vw;
+    padding: 1.00% 11.5%;
+}
+
+.number-yoga {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.left-two {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    align-items: center;
+    width: 440px;
+}
+
+.middle-two {
+    flex: 1;
+    display: flex;
+    position: relative;
+    max-width: 400px;
+}
+
+.right-two {
+    flex: 1;
+    display: flex;
+
+}
+
+.two-message {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #4B3E65;
+    position: absolute;
+    left: 14px;
+    top: 57px;
+    width: 300px;
+}
+
+.yoga-list {
+    width: 350px;
+}
+
+.part-three {
+    display: flex;
+    /*flex-wrap: wrap;*/
+    justify-content: space-around;
+    align-items: center;
+    gap: 4, 5%;
+    aspect-ratio: 15/7;
+    height: auto;
+    width: 100vw;
+    padding: 1.00% 11.6%;
+}
+
+.man {
+    height: 400px;
+    padding-right: 20px;
+}
+
+.button-start {
+    border-radius: 25px;
+    border: none;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    padding: 14px 28px;
+    width: fit-content;
+    font-size: 16px;
+}
+
+.right-three {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.font-three {
+    font-family: "Lora", serif;
+    font-size: 4rem;
+    color: #220953;
+}
+
+.three-message {
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    width: 480px;
+    color: #4B3E65;
+}
