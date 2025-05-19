@@ -7,7 +7,6 @@
 }
 
 #akane {
-    background-color: #F5F0FF; /* Delete after merge */
     padding: 3rem 0;
 }
 
@@ -30,6 +29,7 @@ footer h2 {
 footer h4,
 #akane button,
 #footer-top-info p {
+    color: white;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 1rem;
@@ -287,33 +287,16 @@ footer {
     font-size: 1.5rem;
 }
 
-#theme-toggle + label .dark-mode {
-    display: none;
-}
-
-#theme-toggle:checked + label .light-mode {
-    display: none;
-}
-
-#theme-toggle:checked + label .dark-mode {
-    display: block;
-}
-
-#theme-toggle:checked ~ #akane {
-    background-color: #14092A;
-    color: #D1C0F1;
-}
-
-#theme-toggle:checked ~ #akane h4 {
+body:has(#theme-toggle:checked) #akane h4 {
     color: #A094B8;
 }
 
-#theme-toggle:checked ~ #akane #video-button,
-#theme-toggle:checked ~ #akane #trainer-button {
+body:has(#theme-toggle:checked) #akane #video-button,
+body:has(#theme-toggle:checked) #akane #trainer-button {
     background-color: #372A51;
 }
 
-#theme-toggle:checked ~ #akane #newsletter-container h4 {
+body:has(#theme-toggle:checked) #akane #newsletter-container h4 {
     color: white;
 }
 
@@ -321,11 +304,11 @@ footer {
     display: none;
 }
 
-#theme-toggle:checked ~ #akane .light-img {
+body:has(#theme-toggle:checked) #akane .light-img {
     display: none;
 }
 
-#theme-toggle:checked ~ #akane .dark-img {
+body:has(#theme-toggle:checked) #akane .dark-img {
     display: block;
 }
 
