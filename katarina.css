@@ -120,29 +120,7 @@ main {
         display: flex;
         opacity:1;
         transform:scaleY(1);
-        /* flex-direction: column;
-        gap: 10px;
-        position: absolute;
-        top: 70px;
-        right: 20px;
-        background: var(--bg-color);
-        padding: 20px;
-        border-radius: 10px;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-        z-index: 10;*/
     }
-
-    /* .nav-menu ul {
-        display: none;
-        flex-direction: column;
-        background-color: var(--bg-color);
-        position: absolute;
-        top: 65px;
-        right: 0px;
-        padding: 1rem;
-        box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
-        width: 200px;
-    }*/
     
     .first-part {
         flex-direction: column;
@@ -170,7 +148,7 @@ main {
     
       .yoga-star,
       .home-circle {
-        display: none; /* Skryjeme dekorácie pre mobil */
+        display: none; /* Hide decoration for mobile */
       }
     
       .free-start {
@@ -202,7 +180,7 @@ main {
       }
       .left-two {
           display: flex;
-          flex-direction: row; /* vedľa seba */
+          flex-direction: row; /* next */
           align-items: center;
           justify-content: center;
           gap: 10px;
@@ -312,9 +290,6 @@ main {
                   }
     }
 
-
-}
-
 header {
     height: 65px;
     padding: 0 25px;
@@ -363,32 +338,7 @@ header {
   background: var(--text-color);
   border-radius: 2px;
    }
-/*.hamburger:before;
-.hamburger:after{
-    content:"";
-    position: absolute;
-    height:4px;
-    right:0;
-    background-color: var(--bg-color);
-    border-radius: 10px;
-    transition:0.3s;
-}
-.hamburger:before{
-    top:-10px;
-    width:20px;
-}
-.hamburger:after{
-    top:10px;
-    width:25px;
-}
-.toggle-menu{
-    position: absolute;
-    width:30px;
-    height: 100%;
-    z-index:3;
-    cursor: pointer;
-    opacity:0;  
-}
+
 .hamburger,
 .toggle-menu{
     display: none;   
@@ -406,21 +356,12 @@ header {
     transform:rotate(45deg);
     width: 30px;
 }
-/*
-.nav-menu ul {
-    display: flex;
-    gap: 1.5rem;
-    /*flex-direction: row;
-    align-items: center;*/
-
-}
 
 .moon-icon {
     display: inline;
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.3 ease;
-
 }
 
 .sun-icon {
@@ -428,7 +369,6 @@ header {
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.3 ease;
-
 }
 
 #theme-toggle:checked~.wrapper header .moon-icon {
