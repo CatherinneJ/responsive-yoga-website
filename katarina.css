@@ -310,7 +310,10 @@ header {
     padding:1rem;
     width: 100%;
 }
-
+.nav-control{
+    display: flex;
+    flex-direction: column;
+}
 .nav-menu ul{
     display: flex;
     gap:1.5rem;
@@ -421,6 +424,7 @@ header {
 
 .home-circle {
     position: absolute;
+    aspect-ratio: 15/7;
     /*flex-wrap: wrap;*/
     bottom: 185px;
     left: -20px;
@@ -456,6 +460,7 @@ header {
 .yoga-home {
     height: 450px;
     margin-right: 100px;
+    aspect-ratio: 1/1;
 }
 
 .yoga-participants {
@@ -539,9 +544,12 @@ header {
     top: 57px;
     width: 300px;
 }
-
+.list-next{
+    aspect-ratio: 1/1;
+}
 .yoga-list {
     width: 350px;
+    aspect-ratio: 17/9;
 }
 
 .part-three {
@@ -550,7 +558,7 @@ header {
     justify-content: space-around;
     align-items: center;
     gap: 4, 5%;
-    aspect-ratio: 15/7;
+    aspect-ratio: 1/1;
     height: auto;
     width: 100vw;
     padding: 1.00% 11.6%;
@@ -559,6 +567,7 @@ header {
 .man {
     height: 400px;
     padding-right: 20px;
+    aspect-ratio: 1/1;
 }
 
 .button-start {
