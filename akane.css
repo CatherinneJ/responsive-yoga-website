@@ -1,0 +1,585 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+#akane {
+    background-color: #F5F0FF; /* Delete after merge */
+    padding: 3rem 0;
+}
+
+#akane .bigger-font {
+    font-family: "Lora", serif;
+    font-size: 4rem;
+}
+
+#akane .big-font {
+    font-family: "Lora", serif;
+    font-size: 3.5rem;
+}
+
+footer h2 {
+    font-family: "Lora", serif;
+    font-size: 1.5rem;
+}
+
+#akane h4,
+footer h4,
+#akane button,
+#footer-top-info p {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+#akane .small-font {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+
+}
+
+#routine-container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3.33% 11.5%;
+    gap: 4.5%;
+    height: auto;
+    justify-content: space-around;
+    align-items: center;
+    aspect-ratio: 15 / 7;
+}
+
+#routine-messages {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.5rem;
+}
+
+.gradient-button-1 {
+    white-space: nowrap;
+    border: none;
+    border-radius: 4rem;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    color: white;
+    padding: 1.25em 1.75em;
+    width: fit-content;
+}
+
+#routine-images {
+    position: relative;
+    flex: 1.25;
+    aspect-ratio: 1 / 1;
+}
+
+.routine-image-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 86%;
+}
+
+#routine-image-2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 86%;
+}
+
+#video-button,
+#trainer-button {
+    position: absolute;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4%;
+    border-radius: 1rem;
+    white-space: nowrap;
+    padding: 0 0.88rem;
+    background-color: white;
+}
+
+#video-button {
+    top: 17%;
+    right: 7%;
+    z-index: 3;
+}
+
+#trainer-button {
+    top: 83%;
+    left: 7%;
+    z-index: 3;
+}
+
+#video-button i,
+#trainer-button i {
+    font-size: 1.67rem;
+    margin: 0.75rem 0;
+}
+
+.gradient-text {
+    background: linear-gradient(to right, #FF52AF, #9F53FF); /* グラデーションの色 */
+    -webkit-background-clip: text;  /* 背景をテキストに切り抜く（Webkit系ブラウザ） */
+    -webkit-text-fill-color: transparent; /* テキスト自体は透明にする */
+}
+
+#follow-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    padding: 3.33% 14%;
+}
+
+#follow-area-1,
+#follow-area-2 {
+    display: flex;
+    justify-content: space-between;
+    gap: 4%;
+    width: 100%
+}
+
+#follow-area-1 {
+    aspect-ratio: 2.4 / 1;
+}
+
+#follow-message {
+    flex: 1.6;
+    text-align: center;
+    justify-items: center;
+    align-content: end;
+    order: 2;
+    height: 100%;
+}
+
+#follow-button {
+    aspect-ratio: 1/1;
+    align-content: center;
+    padding: 1rem;
+}
+
+#follow-image-1 {
+    flex: 1;
+    order: 1;
+}
+
+#follow-image-2 {
+    flex: 1;
+    order: 3;
+}
+
+#follow-area-1 img {
+    aspect-ratio: 2 / 3;
+    width: 100%;
+}
+
+#follow-image-3,
+#follow-image-4  {
+    flex: 1;
+    aspect-ratio: 49 / 25;
+}
+
+#follow-area-2 img {
+    width: 100%;
+}
+
+#newsletter-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    margin: 3rem;
+    border-radius: 2rem;
+    background: linear-gradient(to right, #FF52AF, #9F53FF);
+    width: 70%;
+    aspect-ratio: 2.65 / 1;
+    gap: 10%;
+    color: white;
+    text-align: center;
+}
+
+#newsletter-container h4 {
+    width: 61%;
+}
+
+#newsletter-form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    border-radius: 3rem;
+    width: 57%;
+    aspect-ratio: 7.3 / 1;
+    padding: 0 1.5% 0 4.5%;
+}
+
+#newsletter-form input {
+    border: none;
+    color: #A197B4;
+    width: 80%;
+}
+
+#newsletter-form button {
+    align-items: center;
+    border: none;
+    height: 77%;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: #1E0849;
+    color: #A197B4;
+    padding: 4% 11%;
+}
+
+#footer-top,
+#footer-bottom {
+    display: flex;
+    justify-content: space-between;
+}
+
+#footer-top-logo {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    width: 17vw;
+}
+
+#footer-top-logo h2 {
+    width: fit-content;
+}
+
+#footer-top-info {
+    display: flex;
+    /* width: 42vw; */
+    gap: 4.5rem;
+}
+
+#footer-top-info div {
+    flex: 1;
+    aspect-ratio: 3 / 1;
+    width: 11vw;
+}
+
+#footer-top-info h2 {
+    color: white;
+    margin-bottom: 2.5rem;
+}
+
+#footer-bottom {
+    border-top: 1px solid #A197B4;
+    margin-top: 3rem;
+    padding-top: 3rem;
+}
+
+#sns {
+    display: flex;
+    gap: 2rem;
+}
+#sns i {
+    font-size: 1.5rem;
+}
+
+#toggle + label .dark-mode {
+    display: none;
+}
+
+#toggle:checked + label .light-mode {
+    display: none;
+}
+
+#toggle:checked + label .dark-mode {
+    display: block;
+}
+
+#toggle:checked ~ #akane {
+    background-color: #14092A;
+    color: #D1C0F1;
+}
+
+#toggle:checked ~ #akane h4 {
+    color: #A094B8;
+}
+
+#toggle:checked ~ #akane #video-button,
+#toggle:checked ~ #akane #trainer-button {
+    background-color: #372A51;
+}
+
+#toggle:checked ~ #akane #newsletter-container h4 {
+    color: white;
+}
+
+.dark-img {
+    display: none;
+}
+
+#toggle:checked ~ #akane .light-img {
+    display: none;
+}
+
+#toggle:checked ~ #akane .dark-img {
+    display: block;
+}
+
+@media (max-width: 1024px) {
+
+    #akane {
+        padding: 2rem 0;
+    }
+    
+    #akane .bigger-font {
+        font-size: 2rem;
+    }
+    
+    #akane .big-font {
+        font-size: 1.75rem;
+    }
+    
+    footer h2 {
+        font-size: 1.25rem;
+    }
+    
+    #akane h4,
+    footer h4,
+    #akane button,
+    #footer-top-info p {
+        font-size: 0.938rem;
+    }
+    
+    #akane .small-font {
+        font-size: 0.813rem;
+    
+    }
+    
+    #routine-container {
+        display: flex;
+        flex-direction: column;
+        padding: 3.33% 11.5%;
+        gap: 2rem;
+        height: auto;
+        justify-content: space-around;
+        align-items: center;
+        aspect-ratio: auto;
+    }
+    
+    #routine-messages {
+        flex: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+        text-align: center;
+        align-items: center;
+    }
+    
+    #routine-images {
+        position: relative;
+        flex: auto;
+        aspect-ratio: 1 / 1;
+    }
+    
+    .routine-image-1 {
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 2;
+        width: 86%;
+    }
+    
+    #routine-image-2 {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        width: 86%;
+    }
+
+    #video-button,
+    #trainer-button {
+        position: absolute;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        gap: 4%;
+        border-radius: 1rem;
+        white-space: nowrap;
+        padding: 0 0.88rem;
+        background-color: white;
+    }
+    
+    #video-button {
+        top: 17%;
+        right: 7%;
+        z-index: 3;
+    }
+    
+    #trainer-button {
+        top: 83%;
+        left: 7%;
+        z-index: 3;
+    }
+    
+    #video-button i,
+    #trainer-button i {
+        font-size: 1.67rem;
+        margin: 0.75rem 0;
+    }
+    
+    .gradient-text {
+        background: linear-gradient(to right, #FF52AF, #9F53FF); /* グラデーションの色 */
+        -webkit-background-clip: text;  /* 背景をテキストに切り抜く（Webkit系ブラウザ） */
+        -webkit-text-fill-color: transparent; /* テキスト自体は透明にする */
+    }
+    
+    #follow-container {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 2rem 2.5rem;
+    }
+    
+    #follow-area-1 {
+        display: grid;
+        grid-template-areas:
+            "message message"
+            "image-left image-right";
+        aspect-ratio: auto;
+        justify-content: space-evenly;
+        gap: 1rem;      
+        width: 100%
+    }
+  
+    #follow-message {
+        grid-area: message;
+        text-align: center;
+        justify-items: center;
+        align-content: center;
+        height: 100%;
+    }
+    
+    #follow-message h4 {
+        margin-top: 1.5rem;
+    }
+
+    #follow-image-1 {
+        grid-area: image-left;
+    }
+    
+    #follow-image-2 {
+        grid-area: image-right;
+        padding-top: 2.5rem;
+    }
+
+    #follow-area-2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 100%
+    }
+    
+    #follow-area-2 img {
+        width: 80%;
+    }
+
+    #follow-image-4 {
+        display: flex;
+        justify-content: end;
+    }
+    
+    #newsletter-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-self: center;
+        margin: 1.5rem;
+        width: auto;
+        aspect-ratio: auto;
+        padding: 3rem 1rem;
+        gap: 1rem;
+    }
+    
+    #newsletter-container h4 {
+        width: 90%;
+    }
+    
+    #newsletter-form {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background: none;
+        border-radius: 3rem;
+        width: 100%;
+        aspect-ratio: auto;
+        padding: auto;
+    }
+    
+    #newsletter-form input {
+        border: none;
+        background-color: white;
+        padding-left: 1.5rem;
+        border-radius: 3rem;
+        height: 4rem;
+        width: 100%;
+    }
+    
+    #newsletter-form button {
+        align-items: center;
+        border: none;
+        height: 4rem;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    
+    footer {
+        display: flex;
+        flex-direction: column;
+        padding: 3rem 1.5rem;
+    }
+    
+    #footer-top,
+    #footer-bottom {
+        display: flex;
+        gap: 2.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    
+    #footer-top-logo {
+        display: flex;
+        flex-direction: column;
+        gap: 1.25rem;
+        width: auto;
+    }
+        
+    #footer-top-info {
+        display: flex;
+        flex-direction: column;
+        gap: 2.5rem;
+    }
+    
+    #footer-top-info div {
+        flex: 1;
+        aspect-ratio: auto;
+        width: auto;
+    }
+    
+    #footer-top-info h2 {
+        margin-bottom: 1.25rem;
+    }
+    
+    #footer-bottom {
+        margin-top: 2.5rem;
+        padding-top: 2.5rem;
+        align-items: center;
+    }    
+}
