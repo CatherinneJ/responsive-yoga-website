@@ -5,7 +5,9 @@
     text-decoration: none;
     list-style: none;
 }
-
+body{
+    overflow-x: hidden;
+}
 body:has(#theme-toggle:checked) {
     --bg-color: #14092A;
     --text-color: #D1C0F1;
@@ -106,199 +108,214 @@ main {
         position: absolute;
         top: 65px;
         right: 1rem;
-        background-color:var(--bg-color);
+        background-color: var(--bg-color);
         padding: 1rem;
         box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
         opacity: 0;
-        transform:scaleY(0);
+        transform: scaleY(0);
         transform-origin: top;
-        transition:all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+      }
+    img, p, h1, h4 {
+        margin: 0;
+        padding: 0;
+      }
+    #enu-toggle:checked+.header nav ul {
+        display: flex;
+        opacity: 1;
+        transform: scaleY(1);
     }
 
-  
-    #enu-toggle:checked + .header nav ul {
-        display: flex;
-        opacity:1;
-        transform:scaleY(1);
-    }
-    
     .first-part {
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding: 20px;
         gap: 20px;
-      }
-    
-      .left-one {
-        max-width: 90%;
-        position: relative;
-      }
-    
-      .teacher {
-        font-size: 2rem;
-        width: 100%;
-      }
-    
-      .description {
-        font-size: 1rem;
-        width: 100%;
-        color: #4B3E65;
-      }
-    
-      .yoga-star,
-      .home-circle {
-        display: none; /* Hide decoration for mobile */
-      }
-    
-      .free-start {
-        font-size: 1rem;
-        padding: 10px 20px;
-      }
-    
-      .stat-both {
-        flex-direction: column;
-        gap: 10px;
-      }
-    
-      .yoga-home {
-        width: 80%;
-        height: auto;
-        margin: 0 auto;
-        display: block;
-      }
-    
-      .image-yoga {
-        text-align: center;
-        width: 100%;
-      }
-      .part-two
-       {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-      }
-      .left-two {
-          display: flex;
-          flex-direction: row; /* next */
-          align-items: center;
-          justify-content: center;
-          gap: 10px;
-          width: 100%;
-          margin-bottom: 1rem;
-        }
-        .number-yoga {
-          font-size: 1.5rem;
-        }
-        
-        .yoga-list {
-          width: 40%;
-          height: auto;
-          display: block;
-        }
-      
-        .middle-two {
-          display: flex;
-          flex-direction: column;
-          align-items: center;
-          width: 100%;
-          margin-top: 1rem;
-        }
-        
-          .two-message {
-            width: 90%;
-            max-width: 500px;
-            margin-top: 1rem;
-            font-size: 1rem;
-            color: #4B3E65;
-            text-align: center;
-          }
-          
-          .right-two img {
-            width: 50%;
-            height: auto;
-            margin: 1rem auto;
-            display: block;
-          }
-          .man,
-          .yoga-home {
-            width: 80%;
-            height: auto;
-            margin: 1rem auto;
-          }
-          
-          .stat-both {
-            flex-direction: column;
-            align-items: center;
-            gap: 1rem;
-          }
-          .left-one,
-          .right-three {
-            width: 90%;
-            max-width: 500px;
-            margin: 0 auto;
-          }
-          .part-three {
-            flex-direction: column;
-            align-items: center;
-            text-align: center;
-            padding: 2rem 1rem;
-          }
-          .font-three {
-            font-size: 2rem;
-            color: #220953;
-            margin-bottom: 1rem;
-          }
-          
-            .three-message {
-              font-size: 1rem;
-              color: #4B3E65;
-              margin-bottom: 1.5rem;
-              padding: 0 1rem;
-            }
-          
-            .man {
-              width: 70%;
-              height: auto;
-              margin: 0 auto;
-            }
-          
-            .button-start {
-              margin-top: 1rem;
-            }
-            .teacher,
-            .description
-             {
-              text-align: center;
-              padding: 0 1rem;
-            }
-           
-              body:has(#menu-toggle:checked) .nav-menu ul {
-                  display: flex;
-              }
-          
-              .menu-icon {
-                  display: inline;
-              }
-          
-              .nav-container {
-                  position: relative;
-              }
-              
-                  .nav-container ul li {
-                      padding: 10px 0;
-                  }
     }
 
+    .left-one {
+        max-width: 100%;
+        position: relative;
+    }
+
+    .teacher {
+        width:100%;
+        font-size:2rem;
+        max-width: 100%;
+    }
+
+    .description {
+        font-size: 1rem;
+        width:100%;
+        max-width: 100%;
+        color: #4B3E65;  
+    }
+
+    .yoga-star{
+        position:absolute;
+        top:20px;
+        right:10px;
+        height:50px;
+    }
+    .home-circle {
+        position: absolute;
+        bottom: 2Opx;
+        left:0;
+        height:15px;
+    }
+
+    .free-start {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+
+    .stat-both {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .yoga-home {
+        height: auto;
+        max-width:100%;
+        margin-right:0;
+        aspect-ratio: 1/1;
+    }
+
+    .image-yoga {
+        text-align: center;
+        width: 100%;
+    }
+
+    .part-two {
+        flex-direction: column;
+        align-items: center;
+        aspect-ratio: auto;
+        padding:2% 3%;
+    }
+.left-one .description{
+    font-size:1.0rem;
+}
+.left-two,
+.middle-two,
+.right-two{
+    width: 100%;
+    max-width:100%;
+    flex:none;
+    align-items: center;
+    text-align:center;
+}
+.number-yoga {
+        font-size: 1.5rem;
+    }
+
+    .yoga-list {
+        width: 100%;
+        max-width: 100%;
+    }
+
+
+    .two-message {
+        position: static;
+        margin-top:1rem;
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .man{
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        padding: 0;
+    }
+
+    .stat-both {
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    .right-three {
+        align-items: center;
+        text-align: center;
+    }
+    .left-one {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        box-sizing: border-box;
+    }
+
+    .part-three {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        padding: 3% 5%;
+    }
+
+    .font-three {
+        font-size: 2rem;
+        color: #220953;
+    }
+
+    .three-message {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+    .font-three{
+        font-size: 2.5rem;
+    }
+    .right-three{
+        align-items: center;
+    }
+    .man {
+        width: 100%;
+        max-width: 100%;
+        padding-right: 0;
+        margin-bottom: 0;
+    }
+
+    .button-start {
+        margin-top: 1rem;
+    }
+
+    .teacher,
+    .description {
+        text-align: center;
+        padding: 0 1rem;
+    }
+
+    body:has(#menu-toggle:checked) .nav-menu ul {
+        display: flex;
+    }
+
+    .menu-icon {
+        display: inline;
+    }
+
+    .nav-container {
+        position: relative;
+    }
+
+    .nav-container ul li {
+        padding: 10px 0;
+    }
+}
+
 header {
-    /* height: 65px; */
     padding: 0 25px;
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: var(--bg-color);
-    width:100%;
+    width: 100%;
     transition: 0.3s;
 }
 
@@ -307,65 +324,69 @@ header {
     justify-content: space-around;
     align-items: center;
     position: relative;
-    padding:1rem;
+    padding: 1rem;
     width: 100%;
 }
-<<<<<<< HEAD
-.nav-control{
+
+.nav-control {
     display: flex;
     flex-direction: column;
 }
-=======
 
 .nav-menu {
     display: flex;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
 
->>>>>>> 5be321e8ef34c861920865ac99a52e9a9a40a4d3
-.nav-menu ul{
+ .nav-menu ul {
     display: flex;
-    gap:1.5rem;
+    gap: 1.5rem;
 }
-.nav-menu li{
+
+.nav-menu li {
     list-style: none;
 }
-.nav-menu li a{
+
+.nav-menu li a {
     color: var(--text-color);
     text-decoration: none;
     display: block;
-    /* padding:40px 25px; */
     transition: 0.3s;
 }
-.hamburger{
+
+.hamburger {
     display: none;
     flex-direction: column;
     cursor: pointer;
-   gap:5px;
-   
-   }
-   .hamburger span{
+    gap: 5px;
+
+}
+
+.hamburger span {
     width: 20px;
-  height: 3px;
-  background: var(--text-color);
-  border-radius: 2px;
-   }
+    height: 3px;
+    background: var(--text-color);
+    border-radius: 2px;
+}
 
 .hamburger,
-.toggle-menu{
-    display: none;   
+.toggle-menu {
+    display: none;
 }
-.nav-container input:checked ~ .hamburger{
-    background:transparent;
+
+.nav-container input:checked~.hamburger {
+    background: transparent;
 }
-.nav-container input:checked ~ .hamburger:before{
-    top:0;
-    transform:rotate(-45deg);
+
+.nav-container input:checked~.hamburger:before {
+    top: 0;
+    transform: rotate(-45deg);
     width: 30px;
 }
-.nav-container input:checked ~ .hamburger:after{
-    top:0;
-    transform:rotate(45deg);
+
+.nav-container input:checked~.hamburger:after {
+    top: 0;
+    transform: rotate(45deg);
     width: 30px;
 }
 
@@ -399,18 +420,20 @@ header {
 #theme-toggle:checked~#katarina h4 .moon-icon {
     color: #A094B8;
 }
+
 .menu-icon {
     display: none;
     cursor: pointer;
 }
+
 .first-part {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
     font-family: "Lora" serif;
     color: #220953;
-    padding: 1.00% 11.6%;
+    padding: 1.00% 5%;
 }
 
 .left-one {
@@ -451,7 +474,7 @@ header {
 }
 
 .description {
-    margin: 20px 0;
+    margin: 10px 0;
     font-size: 1rem;
     font-weight: 400;
     color: #4B3E65;
@@ -505,17 +528,27 @@ header {
     font-size: 14px;
     font-weight: normal;
 }
-
+.left-two,
+.middle-two,
+.right-two{
+    flex:1;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-start;
+    max-width:100%;
+}
 .part-two {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap:nowrap;
     justify-content: space-around;
     align-items: center;
-    gap: 4, 0%;
+    gap: 2rem;
     height: auto;
     aspect-ratio: 15/7;
-    width: 105vw;
-    padding: 1.00% 11.5%;
+    width: 100vw;
+    max-width:100%;
+    padding: 1.00% 5%;
+    box-sizing: border-box;
 }
 
 .number-yoga {
@@ -525,16 +558,14 @@ header {
 
 .left-two {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-wrap: wrap;
     align-items: center;
-    width: 440px;
+    max-width: 100%;
+    width:100%;
 }
 
 .middle-two {
-    flex: 1;
-    display: flex;
     position: relative;
-    max-width: 400px;
 }
 
 .right-two {
@@ -551,32 +582,42 @@ header {
     position: absolute;
     left: 14px;
     top: 57px;
-    width: 300px;
+    max-width: 300px;
+    width: 100%;
+    box-sizing: border-box;
 }
-.list-next{
+
+.list-next {
     aspect-ratio: 1/1;
 }
+
 .yoga-list {
-    width: 350px;
+    max-width: 350px;
+    width: 100%;
     aspect-ratio: 17/9;
 }
 
 .part-three {
     display: flex;
-    /*flex-wrap: wrap;*/
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
-    gap: 4, 5%;
-    aspect-ratio: 1/1;
+    gap: 2rem;
+    aspect-ratio: auto;
     height: auto;
-    width: 100vw;
-    padding: 1.00% 11.6%;
+    width: 100%;
+    padding: 2.00% 5%;
+    box-sizing: border-box;
 }
 
 .man {
-    height: 400px;
+    height: auto;
+    max-width: 100%;
+    width: 100%;
     padding-right: 20px;
     aspect-ratio: 1/1;
+    object-fit: contain;
 }
 
 .button-start {
@@ -594,6 +635,7 @@ header {
     display: flex;
     flex-direction: column;
     row-gap: 2.5rem;
+    max-width: 100%;
 }
 
 .font-three {
